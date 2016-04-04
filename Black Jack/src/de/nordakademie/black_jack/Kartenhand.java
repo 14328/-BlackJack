@@ -4,12 +4,14 @@ import java.util.Arrays;
 
 public class Kartenhand {
 
-	private Spielkarten[] kartenhand = new Spielkarten[21]; // definiert leeres
-															// "Blatt"
+	private Spielkarten[] kartenhand = new Spielkarten[21];
+	// definiert leeres Blatt
+
 	private int zeiger = 0; // Zählt anzahl der Karten
 
-	public void karteZiehen(Spielkarten handkarte) { // Methode, nimmt blind
-														// Karte auf
+	public void karteZiehen(Spielkarten handkarte) {
+		// Methode, nimmt blind Karte auf
+
 		kartenhand[zeiger] = handkarte;
 		zeiger++;// hochzählen von Blattgröße
 
@@ -27,9 +29,9 @@ public class Kartenhand {
 					assZaehler++; // Asse zählen
 				}
 
-				punkte = punkte + karte.kartenwert(); // Kartenwert ausgeben und
-														// zum
-														// Punktewert addieren
+				punkte = punkte + karte.kartenwert();
+				// Kartenwert ausgeben und zum Punktewert addieren
+
 			}
 		}
 		if (punkte > 21 && assZaehler > 0) {
@@ -43,8 +45,10 @@ public class Kartenhand {
 					}
 				}
 			}
-		} // Zählt Asse als 1, wenn das Blatt mehr als 21 Punkte hat.(und behält
-			// höchst mögliche Punkzahl)
+		} /*
+			 * Zählt Asse als 1, wenn das Blatt mehr als 21 Punkte hat. und
+			 * behält höchst mögliche Punkzahl)
+			 */
 
 		return punkte; // Ausgebe von dem aktuellem Puntestand des Blatts.
 

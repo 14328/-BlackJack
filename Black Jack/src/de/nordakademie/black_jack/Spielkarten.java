@@ -5,8 +5,9 @@ public class Spielkarten {
 	private final String farbe;
 	private final String nummer; // unveränderlich definiert
 
-	public Spielkarten(String farbe, String nummer) { // Konstruktor heist immer
-														// wie die Klasse
+	public Spielkarten(String farbe, String nummer) {
+		// Konstruktor heist immer wie die Klasse
+
 		this.farbe = farbe;
 		this.nummer = nummer;
 	}
@@ -75,9 +76,11 @@ public class Spielkarten {
 	}
 
 	public String getNummer() {
-		return nummer; // Katennummer trotz private zugänglich
-						// machen.(Vincen:"Das ist der Pressesprecher des
-						// Bundestages")
+		return nummer; /*
+						 * Katennummer trotz private zugänglich
+						 * machen.(Vincen:"Das ist der Pressesprecher des
+						 * Bundestages")
+						 */
 
 	}
 
